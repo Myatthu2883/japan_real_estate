@@ -15,35 +15,6 @@ npm run dev
 
 The site uses **localStorage** for all data, so it works immediately without any database setup.
 
----
-
-## 🔑 Demo Login Credentials
-
-| Role  | Email | Password | Panel |
-|-------|-------|----------|-------|
-| **Admin** | admin@japanproperty.jp | admin123 | /admin |
-| **Agent** | agent@japanproperty.jp | agent123 | /agent |
-| **User**  | user@japanproperty.jp  | user123  | /dashboard |
-
-Click the demo buttons in the login modal, or type credentials manually.
-
----
-
-## ✅ All Issues Fixed
-
-| Issue | Fix |
-|-------|-----|
-| ❌ Can't login | ✅ localStorage auth, demo buttons in modal |
-| ❌ Can't see password | ✅ Eye icon toggle on password field |
-| ❌ No role panels | ✅ Admin `/admin`, Agent `/agent`, User `/dashboard` |
-| ❌ No route guards | ✅ `<Guard>` component blocks wrong-role access, redirects to login |
-| ❌ Agent can't see inquiry messages | ✅ Agent panel "Inquiries" tab shows all contact-agent messages |
-| ❌ Saved properties not in profile | ✅ User dashboard "Saved Properties" reads from store, shows real cards |
-| ❌ Admin can't see contact messages | ✅ Admin panel "Messages" tab shows all contact form + inquiry messages |
-| ❌ Database broken | ✅ Clean `schema.sql` with proper FK constraints, tested inserts, seed data |
-
----
-
 ## 📐 Three Panels
 
 ### Admin Panel `/admin`
